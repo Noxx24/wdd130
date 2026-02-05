@@ -23,29 +23,36 @@ div {
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
-
+    display: flex;
+    align-items: center;
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
+    align-items: center;
+    display: flex;
+    align-items: center;
 
 }
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .two {
     background-color: #ace;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container3 {
     /* write declarations here */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .columns-3 {

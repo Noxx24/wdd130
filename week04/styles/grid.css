@@ -3,25 +3,24 @@ body {
     margin: 1rem;
 }
 
-.flex-container {
+.grid-item {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-.flex-item {
+/* .grid-item {
     width: 250px;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
     background-color: #bbb;
     color: #333;
-}
+} */
 
-.item1 {
+/* .item1 {
     min-height: 100px;
 }
 
@@ -31,6 +30,9 @@ body {
 
 .item3 {
     min-height: 300px;
-}
+} */
 
-.caption {}
+.caption {
+
+    grid-column: 1/4
+}

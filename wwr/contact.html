@@ -32,17 +32,17 @@
     <main>
 
         <section class="contact-section">
-            <h2>White Water Rafting Company</h2>
+            <h1>White Water Rafting Company</h1>
 
 
-            <nav>
+            <div>
                 <ul class="address-list">
                     <li>123 Main River Street</li>
                     <li>Kolob, California</li>
                     <li>+1 999 999 9999</li>
                     <li>info@whitewater.com</li>
                 </ul>
-            </nav>
+            </div>
             <div class="section-grid">
 
                 <div class="maps-container">
@@ -73,13 +73,25 @@
                         <legend>Message Purpose</legend>
 
                         <div class="radio-group">
-                            <label><input type="radio" name="purpose" value="general">General
-                                Inquiry</label>
-                            <label><input type="radio" name="purpose"
-                                  value="reservation">Reservation
-                                Question</label>
-                            <label><input type="radio" name="purpose" value="website">Website
-                                Suggestion</label>
+                            <div>
+                                <input type="radio" id="radio" name="purpose" value="general">
+                                <label for="radio">General Inquiry</label>
+
+                            </div>
+
+                            <div>
+                                <input type="radio" id="radio" name="purpose" value="reservation">
+                                <label for="radio">Reservation Question</label>
+
+                            </div>
+
+
+                            <div>
+                                <input type="radio" id="radio" name="purpose" value="website">
+                                <label for="radio">Website Suggestion</label>
+
+                            </div>
+
 
                         </div>
 
@@ -88,14 +100,13 @@
 
                     <div class="textarea">
                         <label for="message">Message</label>
-                        <textarea name="message" placeholder="Type here" rows="5"></textarea>
+                        <textarea name="message" id="message" placeholder="Type here"
+                          rows="5"></textarea>
                     </div>
 
                     <div class="form-group checkbox">
-                        <label><input type="checkbox" name="newsletter" checked> Please Suscribe me
-                            to
-                            the monthly newsletter
-                        </label>
+                        <label for="checkbox">Please Suscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="checkbox" name="newsletter" checked>
 
                     </div>
 
@@ -109,18 +120,18 @@
             <h2>We Are Here to Serve You</h2>
             <div class="Employee-flex">
                 <figure>
-                    <img src="images/Emmanuel Buabab.jpeg" alt="Employee picture">
+                    <img src="images/emmanuel_buabab.jpeg" alt="Employee picture">
                     <figcaption>Emmanuel Buabab</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/Mark Clandestine.jpeg" alt="Employee picture">
+                    <img src="images/mark_clandestine.jpeg" alt="Employee picture">
                     <figcaption>Mark Clandestine</figcaption>
                 </figure>
 
 
                 <figure>
-                    <img src="images/Sarah Smiley.jpeg" alt="Employee picture">
+                    <img src="images/sarah_smiley.jpeg" alt="Employee picture">
                     <figcaption>Sarah Smiley</figcaption>
                 </figure>
 

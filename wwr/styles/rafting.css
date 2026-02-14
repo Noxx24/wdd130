@@ -193,6 +193,11 @@ footer .socialmedia img {
 
 }
 
+.contact-header {
+    display: flex;
+    justify-content: center;
+}
+
 /* form and maps section */
 
 .section-grid {
@@ -229,11 +234,6 @@ textarea {
     width: 100%;
     padding: 0.5rem;
     border-radius: 4px;
-}
-
-.textarea {
-
-    margin-top: ;
 }
 
 .radio-container {

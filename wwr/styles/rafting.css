@@ -2,14 +2,12 @@
 
     --primary-color: #055a05;
     --accent1-color: #264653;
+    --secondary-color: rgb(31 41 51 / 100%);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial
 }
 
-/* header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-} */
+/* ABOUT US WEBPAGE */
 
 * {
     margin: 0;
@@ -26,17 +24,19 @@ body {
 header {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    background-color: #1f2933;
+    background-color: var(--secondary-color)
 }
 
 .logo-cell {
     display: flex;
     align-items: center;
     justify-content: right;
+
 }
 
 li a {
     color: white;
+    text-decoration-line: none;
 }
 
 header,
@@ -66,7 +66,7 @@ article {
 .hero {
     position: relative;
 
-    /* width: 100%; */
+    width: 100%;
 
 }
 
@@ -151,15 +151,16 @@ footer .socialmedia img {
 
 .history-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
 }
 
 .history-grid img {
-    width: 200px;
-    height: 200px;
+
+    width: 100%;
+    height: auto;
     align-items: center;
 }
 
@@ -177,11 +178,11 @@ footer .socialmedia img {
 }
 
 .adventure {
-    background-color: #1f2933;
+    background-color: var(--secondary-color);
     color: white;
 }
 
-/* for contact webpage */
+/* CONTACT US WEBPAGE */
 
 /* address area */
 .address-list {
@@ -279,9 +280,213 @@ legend {
 
 /* Employee Section */
 
-.Employee-flex {
+.employee-div {
 
     display: flex;
     justify-content: space-around;
     padding: 0.5rem;
+
+}
+
+.employee-section {
+    margin-top: 15rem;
+}
+
+/* HOME WEBPAGE */
+
+.inner-hero-flex {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: rgba(38, 70, 83, 0.8);
+
+}
+
+.inner-hero-div {
+
+    /* flex: 1; */
+    max-width: 400px;
+}
+
+.inner-hero-div img {
+
+    width: 300px;
+    height: 250px;
+    border: 4px solid beige;
+    border-radius: 4px;
+
+}
+
+.upper-h2 {
+
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    top: 100px;
+
+}
+
+.hero a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.inner-hero-div h2 {
+
+    color: white;
+}
+
+.inner-hero-div p {
+    width: 250px;
+    color: white;
+}
+
+.second-hero {
+
+    width: 100%;
+    height: 300px;
+    background-color: rgb(228, 192, 138);
+}
+
+.second-hero h2 {
+
+    text-align: center;
+    padding: 1rem;
+}
+
+.newsletter {
+
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+}
+
+.newsletter input {
+
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 250px;
+
+}
+
+.newsletter-div1 {
+
+    left: 100px;
+}
+
+.form-grid {
+    display: flex;
+
+    padding: 1rem;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.button-div {
+    display: flex;
+
+    padding: 2rem;
+
+}
+
+.button-div button {
+    width: 200px;
+    left: 300px;
+    position: relative;
+}
+
+/* TRIPS PAGE */
+
+.cta {
+    background: #e2fa0728;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #0d3b66;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #003049;
+}
+
+/* TRIP CARDS */
+.trip-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1rem;
+}
+
+/* TABLE SECTION */
+.trip-table-section {
+    padding: 2rem;
+}
+
+.trip-table-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #0d3b66;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
 }
